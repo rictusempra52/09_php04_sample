@@ -8,22 +8,21 @@
 </head>
 
 <body>
-  <form>
     <fieldset>
       <legend>todoリストログイン画面</legend>
-      <div>
-        username: <input type="text">
-      </div>
-      <div>
-        password: <input type="text">
-      </div>
-      <div>
-        <button>Login</button>
-      </div>
+      <form action="todo_login_act.php" method="POST">
+        <div>
+          username: <input type="text" name="username">
+        </div>
+        <div>
+          password: <input type="password" name="password">
+        </div>
+        <div>
+          <input type="submit" value="login">
+        </div>
+      </form>
       <a href="todo_register.php">or register</a>
     </fieldset>
-  </form>
-
 </body>
 
 </html>
